@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Anantha Subhas</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- hamburger-nav -->
+     <nav id="hamburger-nav">
+        <div class="logo">Anantha Subhas</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">about</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+            </div>
+        </div>
+     </nav>
+     <!-- profile-section -->
+     <section id="profile">
+        <div class="section__pic-container">
+            <img src="assest/profile-pic.jpg" alt="" width="250" height="250" style="object-fit: cover; border-radius: 50%;">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, I'm</p>
+            <h1>Anantha Subhas</h1>
+            <p class="section__text__p2">Programmer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assest/AnanthaSubhas_CSE-A.pdf')">Download CV</button>
+                <!-- it update url to contact-page -->
+                <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assest/linkedin.png" alt="" class="icon" onclick="location.href='https://www.linkedin.com/in/anantha-subhas/'" style="cursor: pointer;">
+                <img src="./assest/github.png" alt="" class="icon" onclick="location.href='https://github.com/Anantha-subhas'" style="cursor: pointer;">
+            </div>
+        </div>
+     </section>
+     <section id="about">
+        <p class="section__text__p1">Get To Know</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assest/about_me.jpg" alt="" class="about-pic" width="250" height="250" style="object-fit: cover; border-radius: 10%;">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assest/experience.png" alt="" class="icon" >
+                    </div>
+                    <h3>Experience</h3>
+                    <p>I have been passionately learning programming and <br> web development for the past three years</p>
+                
+                </div>
+                <div class="about-container">
+                    <img src="assest/education.png" class="icon" alt="">
+                    <h3>Education</h3>
+                    <p>Bachelors in Computer Science <br> and Engineering - RP Sarathy Institute Of Technology</p>
+
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    Hello! I am a dedicated computer science student with a passion for technology and innovation. My academic journey has equipped me with a solid foundation in programming, algorithms, and software development. I thrive on solving complex problems and enjoy the challenge of learning new technologies.
+                    I have experience with various programming languages, including C, Python, and JavaScript, and have worked on projects ranging from web development to data science. I am particularly interested in artificial intelligence and machine learning, and I am continuously exploring these fields through coursework and personal projects.
+                </p>
+            </div>
+        </div>
+        <img src="assest/arrow.png" alt="" class="icon" onclick="location.href='./#experience'">
+     </section>
+     <section id="experience">
+        <p class="title">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="experience-container">
+                <div class="details-containers">
+                    <div class="experience-sub-title">
+                        Frontend Development
+                    </div>
+                    <div class="article-container">
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>HTML5</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Javascript</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>SASS</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Bootstrap and tailwind</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <div class="experience-sub-title">
+                        Backend Development
+                    </div>
+                    <div class="article-container">
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Nodejs</h3>
+                                <P>begginer</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Express.js</h3>
+                                <P>begginer</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Mysql</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Flask</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>Django</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assest/checkmark.png" alt="" class="icon">
+                            <div>
+                                <h3>MangoDB</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assest/arrow.png" alt="" class="icon" onclick="location.href='./#projects'">
+     </section>
+<section id="projects">
+    <p>Browse My recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="projects-container">
+        <div class="projects-details-contaniner">
+            <div class="project-img">
+              <img src="assest/project-1.jpg" alt="todoAPP">
+            </div>
+            <div class="center">
+                <h2 class="project-title">Project - TODO</h2>
+                <!-- window.location.href = '' -->
+                <button class="github-link" onclick="window.open('https://github.com/Anantha-subhas/todo_updated2.0')">Github</button>
+            </div>
+            
+        </div>
+        <div class="projects-details-contaniner">
+            <div class="project-img">
+              <img src="assest/project-2.jpg" alt="todoAPP">
+            </div>
+            <div class="center">
+
+                <h2 class="project-title">Project - WeatherAPI</h2>
+                <button class="github-link" >Github</button>
+            </div>
+
+        </div>
+        <div class="projects-details-contaniner">
+            <div class="project-img">
+              <img src="assest/project-3.png" alt="todoAPP">
+            </div>
+            <div class="center">
+
+                <h2 class="project-title">Project - ShoppingCart</h2>
+                <button class="github-link">Github</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+     <section id="contact">
+        <p class="section__text__p1">
+            Get in Touch
+        </p>
+        <h1>Contact Me</h1>
+        <div class="contact-upper-container">
+            <div class="contact-info-container">
+                <img src="assest/email.png" alt="" srcset="" class="icon">
+                <p><a href="mailto:subhasannadurai333@gmail.com">subhasannadurai333@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assest/linkedin.png" alt="" srcset="" class="icon">
+                <p><a href="https://www.linkedin.com/in/anantha-subhas/">linkedin</a></p>
+            </div>
+        </div>
+     </section>
+     <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#experience">experience</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright&copy; 2024 Anantha-subhas</p>
+     </footer>
+    <script src="script.js"></script>
+</body>
+</html>
